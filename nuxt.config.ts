@@ -10,5 +10,5 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ["@nuxt/icon", "nuxt-swiper"],
+  modules: ["@nuxt/icon", "nuxt-swiper", "@nuxt/image"],
 });

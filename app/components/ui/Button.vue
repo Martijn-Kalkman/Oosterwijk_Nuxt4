@@ -62,12 +62,12 @@ const buttonClasses = computed(() => {
 
   const variantClasses = {
     primary:
-      "bg-[#007cb0] hover:bg-[#007cb0]/90 text-primary-foreground focus:ring-primary",
+      "bg-[#007cb0] text-white hover:cursor-pointer hover:bg-[#007cb0]/90 text-primary-foreground focus:ring-primary",
     secondary:
       "bg-[#4a5056] hover:bg-[#4a5056]/80 text-secondary-foreground border border-border",
     accent:
-      "bg-[#007cb0] text-black hover:bg-[#007cb0]/80 text-accent-foreground focus:ring-accent",
-    outline: "border border-white text-white hover:bg-slate-200 ",
+      "bg-[#007cb0] text-white hover:cursor-pointer hover:bg-[#007cb0]/80 text-accent-foreground focus:ring-accent",
+    outline: "border-2 border-black text-black hover:bg-slate-100/40 ",
   };
 
   const sizeClasses = {

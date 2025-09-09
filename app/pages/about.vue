@@ -39,10 +39,10 @@
 
             <!-- Image -->
             <div class="relative">
-              <img
+              <NuxtImg
                 src="/persoonlijk.png"
                 alt="Persoonlijke werkwijze"
-                class="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+                class="w-full h-[500px] object-cover rounded-2xl "
                 loading="eager"
               />
               <!-- Decorative elements -->
@@ -58,10 +58,10 @@
       </section>
 
       <!-- Why Choose Us Section -->
-      <section class="py-16 lg:py-24">
+      <section class="py-16 bg-[#007cb0] lg:py-24">
         <UiContainer size="lg">
           <div class="text-center mb-16 animate-slide-up">
-            <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+            <h2 class="text-3xl text-white lg:text-4xl font-bold mb-6">
               Waarom kiezen voor
               <span class="text-primary">Oosterwijk Onderhoud</span>?
             </h2>
@@ -75,7 +75,7 @@
             >
               <!-- Card -->
               <div
-                class="relative h-full bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-black/10 hover:border-primary/30 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+                class="relative h-full bg-[#0C1C56]/50 text-white/90 backdrop-blur-sm rounded-2xl p-8 border-2 border-white hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
               >
                 <!-- Icon -->
                 <div class="relative mb-6">
@@ -88,11 +88,11 @@
 
                 <!-- Content -->
                 <h3
-                  class="text-xl font-bold mb-4 text-black group-hover:text-primary transition-colors"
+                  class="text-xl font-bold mb-4  group-hover:text-primary transition-colors"
                 >
                   {{ feature.title }}
                 </h3>
-                <p class="text-black/90 leading-relaxed">
+                <p class=" leading-relaxed">
                   {{ feature.description }}
                 </p>
 
@@ -113,34 +113,26 @@
       <!-- CTA Section -->
       <section class="py-16 lg:py-24">
         <UiContainer size="md">
-          <div
-            class="text-center rounded-3xl p-12 lg:p-16 relative overflow-hidden"
-          >
-            <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-black">
-              Klaar om te beginnen?
-            </h2>
-            <p class="text-lg text-black/90 mb-8 max-w-2xl mx-auto">
-              Neem contact op voor een vrijblijvende offerte.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <NuxtLink to="/contact">
-                <UiButton variant="accent" size="lg" icon="mdi:calendar">
-                  Plan een afspraak
-                </UiButton>
-              </NuxtLink>
-              <UiButton
-                tag="a"
-                href="tel:+31123456"
-                variant="outline"
-                size="lg"
-                icon="mdi:phone"
-                class="border-black/30 text-black hover:text-slate-700 hover:bg-black/10"
-              >
-                Bel direct
-              </UiButton>
-            </div>
-          </div>
+          <Cta
+  title="Klaar om te beginnen?"
+  subtitle="Neem contact op voor een vrijblijvende offerte."
+  :firstButton="{
+    tag: 'NuxtLink',
+    to: '/contact',
+    variant: 'accent',
+    size: 'lg',
+    icon: 'mdi:calendar',
+    label: 'Plan een afspraak'
+  }"
+  :secondButton="{
+    tag: 'a',
+    href: 'tel:+31123456',
+    variant: 'outline',
+    size: 'lg',
+    icon: 'mdi:phone',
+    label: 'Bel direct'
+  }"
+/>
         </UiContainer>
       </section>
     </main>
