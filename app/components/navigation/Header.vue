@@ -8,8 +8,8 @@
         >
           <!-- Logo -->
           <NuxtLink to="/" class="flex items-center">
-            <img
-              src="/logo.png"
+            <NuxtImg
+              src="/logo.webp"
               alt="Oosterwijk Onderhoud Logo"
               class="w-32 sm:w-40 md:w-48 lg:w-60 rounded transition-transform hover:scale-105"
               loading="eager"

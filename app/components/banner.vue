@@ -15,8 +15,8 @@
           class="relative w-11/12 mx-auto mt-3 rounded-xl overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]"
         >
           <!-- Background Image -->
-          <img
-            src="/banner.jpg"
+          <NuxtImg
+            src="/banner.webp"
             alt="Professionele schilderdiensten"
             class="w-full h-full object-cover"
             loading="eager"

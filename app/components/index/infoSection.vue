@@ -13,7 +13,7 @@
           :class="imageAlignmentClass"
         >
           <div class="relative group">
-            <img
+            <NuxtImg
               v-if="imageSrc"
               :src="imageSrc"
               :alt="imageAlt || title"

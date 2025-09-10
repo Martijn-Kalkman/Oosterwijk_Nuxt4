@@ -8,7 +8,7 @@
           <IndexInfoSection
             title="Meer dan een schildersbedrijf"
             content="Uitmuntende kwaliteit is onze standaard. Of u nu een schilder zoekt voor binnen of buiten schilderwerk: ik lever altijd duurzame kwaliteit. Zo verzorg ik bijvoorbeeld ook uiterst strak sauswerk om extra lang van te genieten. Wilt u eens wat anders op de muur? Ik behang uw wanden met stevig glasvlies- of glasweefselbehang. Kunnen de muren nog een tijdje mee, maar stoort u zich aan de versleten kozijnen, deurposten of trappen in huis? Nadat ik het hout vakkundig opknap en afwerk met watergedragen binnenlak is het houtwerk weer als nieuw."
-            image-src="/intro.jpg"
+            image-src="/intro.webp"
             image-alt="Professioneel schilderwerk"
             :reverse="true"
             image-width="100%"
@@ -53,7 +53,7 @@
                   :key="index"
                   class="relative group aspect-[4/5] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <img
+                  <NuxtImg
                     :src="item.image"
                     :alt="item.alt"
                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -99,7 +99,7 @@
           <IndexInfoSection
             title="Persoonlijke & transparante werkwijze"
             content="Voor de verschillende diensten die ik aanbied, geldt altijd hetzelfde: ik ben pas tevreden als u dat ook bent. Daarom stem ik mijn werkzaamheden precies af op uw wensen. Nadat ik u een gratis offerte doe, kom ik langs op locatie. Ik examineer de situatie en adviseer u over de mogelijkheden. Samen bespreken we de uit te voeren werkzaamheden, de opties voor afwerking en uiteraard de planning. Zo weet u precies wat u kunt verwachten – ook als het op financiën aankomt."
-            image-src="/persoonlijk.png"
+            image-src="/persoonlijk.webp"
             image-alt="Persoonlijke benadering"
             image-width="100%"
             image-height="400px"
@@ -118,17 +118,17 @@
 <script setup lang="ts">
 const portfolioItems = [
   {
-    image: "/banner.jpg",
+    image: "/banner.webp",
     alt: "Project 1",
     title: "Portfolio 1",
   },
   {
-    image: "/bgpaint.png",
+    image: "/banner.webp",
     alt: "Project 2",
     title: "Portfolio 2",
   },
   {
-    image: "/intro.jpg",
+    image: "/intro.webp",
     alt: "Project 3",
     title: "Portfolio 3",
   },

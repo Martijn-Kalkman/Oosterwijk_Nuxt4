@@ -40,7 +40,7 @@
             <!-- Image -->
             <div class="relative">
               <NuxtImg
-                src="/persoonlijk.png"
+                src="/persoonlijk.webp"
                 alt="Persoonlijke werkwijze"
                 class="w-full h-[500px] object-cover rounded-2xl "
                 loading="eager"

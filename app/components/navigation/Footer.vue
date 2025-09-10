@@ -69,7 +69,7 @@
           <div class="hidden lg:block lg:col-span-1 relative">
             <div class="absolute -top-20 right-0 w-80 h-80">
               <NuxtImg
-                src="/footerimg.png"
+                src="/footerimg.webp"
                 alt="Oosterwijk Onderhoud"
                 class="w-full h-full object-cover rounded-xl"
                 loading="lazy"

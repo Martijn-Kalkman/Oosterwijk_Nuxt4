@@ -24,7 +24,7 @@
               class="group bg-[#064C83] text-white backdrop-blur-sm rounded-2xl p-8 hover:bg-[#193c5f] hover:cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-black/10"
             >
               <div class="relative overflow-hidden rounded-xl mb-6">
-                <img
+                <NuxtImg
                   :src="service.image"
                   :alt="service.title"
                   class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
@@ -96,40 +96,40 @@ const mainServices = [
     title: "Sauswerk",
     description:
       "Professioneel sauzen van muren en plafonds met hoogwaardige materialen.",
-    image: "/bg2.png",
+    image: "/intro.webp",
     icon: "mdi:format-paint",
   },
   {
     title: "Lakwerk",
     description:
       "Lakken van deuren, kozijnen, plinten en trappen in elke gewenste afwerking.",
-    image: "/bg3.png",
+    image: "/intro.webp",
     icon: "mdi:brush",
   },
   {
     title: "Behangwerk",
     description:
       "Behangen met glasvlies of glasweefselbehang voor een perfecte afwerking.",
-    image: "/bgpaint.png",
+    image: "/intro.webp",
     icon: "mdi:wallpaper",
   },
   {
     title: "Houtrenovatie",
     description: "Renovatie van kozijnen, deuren en andere houten elementen.",
-    image: "/bg4.png",
+    image: "/intro.webp",
     icon: "mdi:hammer",
   },
   {
     title: "Buitenschilderwerk",
     description: "Bescherming en verfraaiing van gevels en buitenwerk.",
-    image: "/bg6.jpg",
+    image: "/intro.webp",
     icon: "mdi:home",
   },
   {
     title: "Spuitwerk",
     description:
       "Professioneel spuitwerk voor grote oppervlakken en strakke afwerking.",
-    image: "/bg7.jpg",
+    image: "/intro.webp",
     icon: "mdi:spray",
   },
 ];

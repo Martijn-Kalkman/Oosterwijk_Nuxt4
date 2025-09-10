@@ -1,6 +1,5 @@
 <template>
   <NavigationHeader />
-
   <Banner />
   <slot />
   <NavigationFooter />
