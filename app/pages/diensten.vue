@@ -5,9 +5,10 @@
       <section class="py-16 lg:py-20 text-black">
         <UiContainer size="lg">
           <div class="text-center animate-slide-up">
-            <h1 class="text-4xl lg:text-5xl font-bold mb-6">Mijn Diensten</h1>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-6">Mijn Specialiteiten</h1>
             <p class="text-xl max-w-3xl mx-auto leading-relaxed">
-              Professioneel schilderwerk voor binnen en buiten
+              Van traditioneel vakmanschap tot moderne technieken - 
+              elke dienst wordt uitgevoerd met dezelfde toewijding en precisie
             </p>
           </div>
         </UiContainer>
@@ -28,6 +29,10 @@
                   :src="service.image"
                   :alt="service.title"
                   class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  format="webp"
+                  quality="85"
                 />
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
@@ -95,40 +100,40 @@ const mainServices = [
   {
     title: "Sauswerk",
     description:
-      "Professioneel sauzen van muren en plafonds met hoogwaardige materialen.",
+      "Strak sauswerk voor muren en plafonds met premium kwaliteit verf. Van voorstrijken tot eindafwerking - elke laag wordt met precisie aangebracht voor een duurzaam resultaat.",
     image: "/intro.webp",
     icon: "mdi:format-paint",
   },
   {
     title: "Lakwerk",
     description:
-      "Lakken van deuren, kozijnen, plinten en trappen in elke gewenste afwerking.",
+      "Vakkundig lakken van deuren, kozijnen, plinten en trappen. Watergedragen binnenlak voor een milieuvriendelijke en duurzame afwerking die jarenlang mooi blijft.",
     image: "/intro.webp",
     icon: "mdi:brush",
   },
   {
     title: "Behangwerk",
     description:
-      "Behangen met glasvlies of glasweefselbehang voor een perfecte afwerking.",
+      "Professioneel behangen met glasvlies- of glasweefselbehang. Perfecte afwerking voor een strakke, moderne uitstraling die makkelijk te onderhouden is.",
     image: "/intro.webp",
     icon: "mdi:wallpaper",
   },
   {
     title: "Houtrenovatie",
-    description: "Renovatie van kozijnen, deuren en andere houten elementen.",
+    description: "Complete renovatie van kozijnen, deuren en houten elementen. Van schuren tot lakken - uw houtwerk krijgt een tweede leven met vakmanschap.",
     image: "/intro.webp",
     icon: "mdi:hammer",
   },
   {
     title: "Buitenschilderwerk",
-    description: "Bescherming en verfraaiing van gevels en buitenwerk.",
+    description: "Bescherming en verfraaiing van gevels en buitenwerk. Weerbestendige verf en technieken voor optimale bescherming tegen de elementen.",
     image: "/intro.webp",
     icon: "mdi:home",
   },
   {
     title: "Spuitwerk",
     description:
-      "Professioneel spuitwerk voor grote oppervlakken en strakke afwerking.",
+      "Efficiënt spuitwerk voor grote oppervlakten en moeilijk bereikbare plekken. Uniforme afwerking met moderne spuittechnieken voor professioneel resultaat.",
     image: "/intro.webp",
     icon: "mdi:spray",
   },
@@ -136,12 +141,17 @@ const mainServices = [
 
 // SEO Meta
 useHead({
-  title: "Diensten - Oosterwijk Onderhoud",
+  title: "Schilderdiensten - Sauswerk, Lakwerk & Houtrenovatie | Oosterwijk Onderhoud",
   meta: [
     {
       name: "description",
       content:
-        "Professionele schilderdiensten: sauswerk, lakwerk, behangwerk, houtrenovatie en meer. Gratis offerte in Bergen op Zoom en omgeving.",
+        "Ontdek onze specialiteiten: sauswerk, lakwerk, behangwerk, houtrenovatie en spuitwerk. Meer dan 10 jaar ervaring in Bergen op Zoom, Rotterdam, Goes en omgeving. Gratis offerte!",
+    },
+    {
+      name: "keywords",
+      content:
+        "schilderdiensten, sauswerk, lakwerk, behangwerk, houtrenovatie, spuitwerk, schilder Bergen op Zoom, gratis offerte",
     },
   ],
 });

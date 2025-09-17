@@ -13,6 +13,9 @@
               alt="Oosterwijk Onderhoud Logo"
               class="w-32 sm:w-40 md:w-48 lg:w-60 rounded transition-transform hover:scale-105"
               loading="eager"
+              sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, (max-width: 1024px) 192px, 240px"
+              format="webp"
+              quality="90"
             />
           </NuxtLink>
 
@@ -52,20 +55,20 @@
             class="hidden lg:flex items-center space-x-6 text-sm font-medium"
           >
             <a
-              href="tel:+31123456"
+              href="tel:+31612345678"
               class="flex items-center hover:text-accent transition-colors"
               aria-label="Bel ons"
             >
               <Icon name="mdi:phone" class="w-5 h-5 mr-2" />
-              +31 123456
+              +31 6 1234 5678
             </a>
             <a
-              href="mailto:email@example.com"
+              href="mailto:info@oosterwijkonderhoud.nl"
               class="flex items-center hover:text-accent transition-colors"
               aria-label="Email ons"
             >
               <Icon name="mdi:email" class="w-5 h-5 mr-2" />
-              email@example.com
+              info@oosterwijkonderhoud.nl
             </a>
           </div>
 
@@ -146,18 +149,18 @@
         <!-- Contact Info -->
         <div class="mt-auto space-y-4 text-sm border-t border-black/20 pt-4">
           <a
-            href="tel:+31123456"
+            href="tel:+31612345678"
             class="flex items-center hover:text-accent transition-colors"
           >
             <Icon name="mdi:phone" class="w-5 h-5 mr-2" />
-            +31 123456
+            +31 6 1234 5678
           </a>
           <a
-            href="mailto:email@example.com"
+            href="mailto:info@oosterwijkonderhoud.nl"
             class="flex items-center hover:text-accent transition-colors"
           >
             <Icon name="mdi:email" class="w-5 h-5 mr-2" />
-            email@example.com
+            info@oosterwijkonderhoud.nl
           </a>
         </div>
       </div>

@@ -6,10 +6,10 @@
         <main>
           <!-- Hero Section with Info -->
           <IndexInfoSection
-            title="Meer dan een schildersbedrijf"
-            content="Uitmuntende kwaliteit is onze standaard. Of u nu een schilder zoekt voor binnen of buiten schilderwerk: ik lever altijd duurzame kwaliteit. Zo verzorg ik bijvoorbeeld ook uiterst strak sauswerk om extra lang van te genieten. Wilt u eens wat anders op de muur? Ik behang uw wanden met stevig glasvlies- of glasweefselbehang. Kunnen de muren nog een tijdje mee, maar stoort u zich aan de versleten kozijnen, deurposten of trappen in huis? Nadat ik het hout vakkundig opknap en afwerk met watergedragen binnenlak is het houtwerk weer als nieuw."
+            title="Professioneel schilderwerk met persoonlijke aandacht"
+            content="Bij Oosterwijk Onderhoud staat kwaliteit en vakmanschap centraal. Met meer dan 10 jaar ervaring lever ik duurzaam schilderwerk voor binnen en buiten. Van strak sauswerk tot specialistisch lakwerk - elke klus wordt met precisie uitgevoerd. Ik behang uw wanden met hoogwaardig glasvlies- of glasweefselbehang voor een perfecte afwerking. Ook houtrenovatie behoort tot mijn specialiteiten: kozijnen, deurposten en trappen krijgen een nieuwe leven met watergedragen binnenlak. Uw tevredenheid is mijn garantie."
             image-src="/intro.webp"
-            image-alt="Professioneel schilderwerk"
+            image-alt="Professioneel schilderwerk door Oosterwijk Onderhoud"
             :reverse="true"
             image-width="100%"
             image-height="400px"
@@ -30,16 +30,15 @@
             >
               <div class="text-center mb-16 animate-slide-up">
                 <h2 class="text-3xl lg:text-4xl font-bold text-[#e9e0d2] mb-4">
-                  Mijn Werk
+                  Mijn Portfolio
                 </h2>
                 <p
                   class="max-w-3xl mx-auto text-[#e9e0d2]/90 text-lg leading-relaxed"
                 >
-                  Ruim 10 jaar Oosterwijk Onderhoud. Mijn schildersbedrijf is
-                  ontstaan uit een passie voor secuur schilderwerk. Inmiddels
-                  lever ik al meer dan 10 jaar onberispelijk schilderwerk,
-                  houtrenovatie, spuitwerk en behangdiensten voor de scherpste
-                  prijs.
+                  Al meer dan een decennium verzorg ik vakmanschap van de hoogste kwaliteit. 
+                  Mijn schildersbedrijf is gegroeid vanuit een diepe passie voor perfecte afwerkingen. 
+                  Van moderne interieurs tot historische renovaties - elk project wordt met dezelfde 
+                  toewijding en precisie aangepakt. Bekijk hier een selectie van mijn meest recente werk.
                 </p>
               </div>
 
@@ -57,6 +56,10 @@
                     :src="item.image"
                     :alt="item.alt"
                     class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    format="webp"
+                    quality="85"
                   />
                   <!-- Overlay -->
                   <div
@@ -77,7 +80,7 @@
                   <h3
                     class="text-2xl lg:text-3xl font-bold text-white mb-6 leading-tight"
                   >
-                    Laten we kijken wat ik voor je kan betekenen
+                    Ontdek wat ik voor uw project kan betekenen
                   </h3>
                   <NuxtLink to="/diensten">
                     <UiButton
@@ -87,7 +90,7 @@
                       size="lg"
                       full-width
                     >
-                      Bekijk mijn diensten
+                      Ontdek mijn diensten
                     </UiButton>
                   </NuxtLink>
                 </div>
@@ -97,10 +100,10 @@
 
           <!-- Personal Approach Section -->
           <IndexInfoSection
-            title="Persoonlijke & transparante werkwijze"
-            content="Voor de verschillende diensten die ik aanbied, geldt altijd hetzelfde: ik ben pas tevreden als u dat ook bent. Daarom stem ik mijn werkzaamheden precies af op uw wensen. Nadat ik u een gratis offerte doe, kom ik langs op locatie. Ik examineer de situatie en adviseer u over de mogelijkheden. Samen bespreken we de uit te voeren werkzaamheden, de opties voor afwerking en uiteraard de planning. Zo weet u precies wat u kunt verwachten – ook als het op financiën aankomt."
+            title="Transparante communicatie en persoonlijke service"
+            content="Mijn werkwijze kenmerkt zich door openheid en persoonlijke aandacht. Vanaf het eerste contact tot de laatste afwerking houd ik u volledig op de hoogte. Na een kosteloze offerte op locatie bespreken we samen alle mogelijkheden, materialen en planning. U weet precies wat u kunt verwachten qua kosten, tijdsduur en resultaat. Geen verrassingen, geen verborgen kosten - alleen eerlijke, professionele service die uw vertrouwen verdient."
             image-src="/persoonlijk.webp"
-            image-alt="Persoonlijke benadering"
+            image-alt="Persoonlijke service van Oosterwijk Onderhoud"
             image-width="100%"
             image-height="400px"
             title-color="text-black"
@@ -119,35 +122,86 @@
 const portfolioItems = [
   {
     image: "/banner.webp",
-    alt: "Project 1",
-    title: "Portfolio 1",
+    alt: "Moderne interieur renovatie",
+    title: "Moderne Interieur",
   },
   {
     image: "/banner.webp",
-    alt: "Project 2",
-    title: "Portfolio 2",
+    alt: "Historische houtrenovatie",
+    title: "Houtrenovatie",
   },
   {
     image: "/intro.webp",
-    alt: "Project 3",
-    title: "Portfolio 3",
+    alt: "Professioneel sauswerk",
+    title: "Sauswerk",
   },
 ];
 
 // SEO Meta
 useHead({
-  title: "Oosterwijk Onderhoud - Professionele Schilderdiensten",
+  title: "Oosterwijk Onderhoud - Vakmanschap in Schilderwerk | 10+ Jaar Ervaring",
   meta: [
     {
       name: "description",
       content:
-        "Oosterwijk Onderhoud biedt professionele schilderdiensten, lakwerk en houtrenovatie. Meer dan 10 jaar ervaring in Bergen op Zoom, Rotterdam, Goes en omgeving.",
+        "Professionele schilderdiensten door Oosterwijk Onderhoud. Specialist in sauswerk, lakwerk, houtrenovatie en behangwerk. Meer dan 10 jaar ervaring in Bergen op Zoom, Rotterdam, Goes en omgeving. Gratis offerte!",
     },
     {
       name: "keywords",
       content:
-        "schilder, schilderwerk, lakwerk, houtrenovatie, Bergen op Zoom, Rotterdam, Goes, Breda",
+        "schilder Bergen op Zoom, schilderwerk Rotterdam, lakwerk Goes, houtrenovatie Breda, sauswerk, behangwerk, professioneel schilder, gratis offerte",
     },
+    {
+      property: "og:title",
+      content: "Oosterwijk Onderhoud - Vakmanschap in Schilderwerk"
+    },
+    {
+      property: "og:description", 
+      content: "Professionele schilderdiensten met meer dan 10 jaar ervaring. Specialist in sauswerk, lakwerk en houtrenovatie."
+    },
+    {
+      property: "og:type",
+      content: "website"
+    }
   ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Oosterwijk Onderhoud",
+        "description": "Professionele schilderdiensten met meer dan 10 jaar ervaring. Specialist in sauswerk, lakwerk, houtrenovatie en behangwerk.",
+        "url": "https://oosterwijkonderhoud.nl",
+        "telephone": "+31 6 1234 5678",
+        "email": "info@oosterwijkonderhoud.nl",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bergen op Zoom",
+          "addressCountry": "NL"
+        },
+        "areaServed": [
+          "Bergen op Zoom",
+          "Rotterdam",
+          "Goes",
+          "Breda",
+          "Tholen"
+        ],
+        "serviceType": [
+          "Schilderwerk",
+          "Sauswerk",
+          "Lakwerk",
+          "Behangwerk",
+          "Houtrenovatie",
+          "Spuitwerk"
+        ],
+        "foundingDate": "2014",
+        "priceRange": "€€",
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "image": "https://oosterwijkonderhoud.nl/logo.webp",
+        "logo": "https://oosterwijkonderhoud.nl/logo.webp"
+      })
+    }
+  ]
 });
 </script>

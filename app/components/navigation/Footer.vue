@@ -10,7 +10,7 @@
             </h3>
             <div class="space-y-4">
               <a
-                href="tel:+31123456"
+                href="tel:+31612345678"
                 class="flex justify-center lg:justify-start items-center text-white hover:text-white/70 transition-colors group"
                 aria-label="Bel ons"
               >
@@ -18,10 +18,10 @@
                   name="mdi:phone"
                   class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform"
                 />
-                <span>+31 123456</span>
+                <span>+31 6 1234 5678</span>
               </a>
               <a
-                href="mailto:email@example.com"
+                href="mailto:info@oosterwijkonderhoud.nl"
                 class="flex justify-center lg:justify-start items-center text-white hover:text-white/70 transition-colors group"
                 aria-label="Email ons"
               >
@@ -29,7 +29,7 @@
                   name="mdi:email"
                   class="w-6 h-6 mr-3 group-hover:scale-110 transition-transform"
                 />
-                <span>email@example.com</span>
+                <span>info@oosterwijkonderhoud.nl</span>
               </a>
             </div>
           </div>
@@ -58,10 +58,10 @@
             </h3>
             <div class="space-y-2 text-white/90">
               <p>Bergen op Zoom</p>
-              <p>Rotterdam</p>
-              <p>Goes</p>
-              <p>Breda</p>
-              <p>En omgeving</p>
+              <p>Rotterdam & Rijnmond</p>
+              <p>Goes & Zuid-Beveland</p>
+              <p>Breda & omstreken</p>
+              <p>Tholen & Sint Philipsland</p>
             </div>
           </div>
 
@@ -70,9 +70,12 @@
             <div class="absolute -top-20 right-0 w-80 h-80">
               <NuxtImg
                 src="/footerimg.webp"
-                alt="Oosterwijk Onderhoud"
+                alt="Oosterwijk Onderhoud schilderwerk"
                 class="w-full h-full object-cover rounded-xl"
                 loading="lazy"
+                sizes="320px"
+                format="webp"
+                quality="85"
               />
             </div>
           </div>

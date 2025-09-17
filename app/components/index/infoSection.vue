@@ -23,6 +23,9 @@
               ]"
               :style="imageStyles"
               :loading="eager ? 'eager' : 'lazy'"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              format="webp"
+              quality="85"
             />
           </div>
         </div>

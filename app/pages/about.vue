@@ -12,14 +12,15 @@
               <h1
                 class="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight"
               >
-                Persoonlijke &
-                <span class="text-primary">transparante</span> werkwijze
+                Vakmanschap met
+                <span class="text-primary">persoonlijke</span> aandacht
               </h1>
 
               <p class="text-lg lg:text-xl mb-8 leading-relaxed">
-                Ik ben pas tevreden als u dat ook bent. Daarom stem ik mijn
-                werkzaamheden precies af op uw wensen en lever ik altijd
-                kwaliteit.
+                Met meer dan 10 jaar ervaring in het vak combineer ik traditioneel 
+                vakmanschap met moderne technieken. Elke klus wordt aangepakt met 
+                dezelfde toewijding en precisie, of het nu gaat om een kleine 
+                reparatie of een complete renovatie.
               </p>
 
               <div class="flex flex-col sm:flex-row gap-4">
@@ -41,9 +42,12 @@
             <div class="relative">
               <NuxtImg
                 src="/persoonlijk.webp"
-                alt="Persoonlijke werkwijze"
-                class="w-full h-[500px] object-cover rounded-2xl "
+                alt="Persoonlijke werkwijze van Oosterwijk Onderhoud"
+                class="w-full h-[500px] object-cover rounded-2xl"
                 loading="eager"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                format="webp"
+                quality="90"
               />
               <!-- Decorative elements -->
               <div
@@ -62,7 +66,7 @@
         <UiContainer size="lg">
           <div class="text-center mb-16 animate-slide-up">
             <h2 class="text-3xl text-white lg:text-4xl font-bold mb-6">
-              Waarom kiezen voor
+              Waarom kiest u voor
               <span class="text-primary">Oosterwijk Onderhoud</span>?
             </h2>
           </div>
@@ -142,45 +146,50 @@
 <script setup lang="ts">
 const features = [
   {
-    title: "10+ jaar ervaring",
-    description: "Ruime ervaring in schilderwerk en houtrenovatie.",
+    title: "10+ jaar vakmanschap",
+    description: "Decennialange ervaring in alle aspecten van schilderwerk en houtrenovatie.",
     icon: "mdi:award",
   },
   {
     title: "Kwaliteitsgarantie",
-    description: "Hoogwaardige materialen en vakkundig uitgevoerd werk.",
+    description: "Alleen de beste materialen en vakkundige uitvoering voor duurzaam resultaat.",
     icon: "mdi:star",
   },
   {
     title: "Transparante prijzen",
-    description: "Duidelijke offertes zonder verrassingen achteraf.",
+    description: "Eerlijke, duidelijke offertes zonder verborgen kosten of verrassingen.",
     icon: "mdi:calculator",
   },
   {
-    title: "Persoonlijke service",
-    description: "Ik luister naar uw wensen en werk op maat.",
+    title: "Persoonlijke aanpak",
+    description: "Elk project wordt aangepakt volgens uw specifieke wensen en behoeften.",
     icon: "mdi:account-group",
   },
   {
     title: "Gratis offerte",
-    description: "Vrijblijvende offerte zonder verplichtingen.",
+    description: "Vrijblijvende offerte op locatie zonder enige verplichting.",
     icon: "mdi:file-document",
   },
   {
-    title: "Lokaal bedrijf",
-    description: "Actief in de regio met snelle service.",
+    title: "Lokale specialist",
+    description: "Actief in de regio met snelle service en persoonlijke aandacht.",
     icon: "mdi:map-marker",
   },
 ];
 
 // SEO Meta
 useHead({
-  title: "Over Mij - Oosterwijk Onderhoud",
+  title: "Over Oosterwijk Onderhoud - Vakman met 10+ Jaar Ervaring",
   meta: [
     {
       name: "description",
       content:
-        "Leer meer over Oosterwijk Onderhoud. Meer dan 10 jaar ervaring in professioneel schilderwerk met persoonlijke service en transparante prijzen.",
+        "Ontdek het verhaal achter Oosterwijk Onderhoud. Meer dan 10 jaar vakmanschap in schilderwerk, houtrenovatie en behangwerk. Persoonlijke service en transparante prijzen.",
+    },
+    {
+      name: "keywords",
+      content:
+        "over oosterwijk onderhoud, schilder ervaring, vakman schilderwerk, persoonlijke service schilder",
     },
   ],
 });
